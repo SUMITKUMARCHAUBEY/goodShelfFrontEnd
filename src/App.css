@@ -1,38 +1,95 @@
-.App {
-  text-align: center;
+*{
+  
+background-color:white;
+font-family: 'Fredoka One', sans-serif;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App{
+  max-width: 900px;
+  margin: 0 auto; /* Center horizontally */
+  padding-bottom: 100 px;
+
+  
+ 
+}
+.slider{
+  width: 80%;
+  height: 300px;
+  border-radius: 12px;
+  /* background-color: aqua; */
+  display: flex;
+  overflow-y: hidden;
+  align-items: center;
+  overflow-x: scroll;
+  padding-left: 10px;
+  margin-left:8%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.card{
+  display: flex;
+  padding-right: 25px;
+  flex-direction: column;
+  overflow: hidden;
+  -ms-overflow-style: none; /* Hide scrollbar in IE/Edge */
+  min-width:200px;
+  height:100%;
+  margin: 5px;
+  /* background:red; */
+}
+.slider::-webkit-scrollbar{
+  display: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+.imgCont{
+  width: 100%;
+  max-width: 200px;
+  max-height: 200px;
+  height: 68%;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.contDesc{
+  /* display: none; */
+  margin-top:30px;
+  height: 10%;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-color: rgba(117, 37, 37, 0);
+  
+}
+.buy{
+  margin-top: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.ItmTitle{
+  background-color: rgba(117, 37, 37, 0);
+  font-size: 14px;
+  font-weight: 500;
+  color: #3e3d3d;
+}
+.liner{
+  background-color: rgba(117, 37, 37, 0);
+  font-size: 12px;
+  color: #7b7b7b;
 }
 
-.App-link {
-  color: #61dafb;
+.sliderHead{
+ font-size: x-large; 
+  padding-left:9% ;
+}
+.headder{
+padding-left: 6.5%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
+
+
+
+
+
